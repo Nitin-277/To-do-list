@@ -24,14 +24,14 @@ function addTask() {
     // Edit button
     const editBtn = document.createElement('button');
     editBtn.className = 'edit';
-    editBtn.textContent = 'Edit';
+    editBtn.innerHTML = '<i class="fas fa-edit"></i>';
     editBtn.onclick = function () {
         editTask(taskSpan);
     };
 
     // Delete button
     const deleteBtn = document.createElement('button');
-    deleteBtn.textContent = 'Delete';
+    deleteBtn.innerHTML = '<i class="fas fa-trash-alt"></i>';
     deleteBtn.onclick = function () {
         taskList.removeChild(li);
     };
